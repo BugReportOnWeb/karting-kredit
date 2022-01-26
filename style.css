@@ -39,6 +39,10 @@ header nav ul li a {
   font-size: 1.03rem;
 }
 
+header nav ul li a:active {
+  font-weight: 600;
+}
+
 /* Hero styling */
 
 .hero img {
