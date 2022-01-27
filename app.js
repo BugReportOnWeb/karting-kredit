@@ -15,7 +15,7 @@ gsap.from(".hero .hero-box .content .description", {
 gsap.from(".hero .hero-box .content .btn", {
   opacity: 0,
   duration: 1,
-  delay: 2,
+  delay: 1.9,
 });
 
 // Hero Animation
@@ -81,7 +81,7 @@ dividers.forEach((divider) => {
 // Textbox Fade-In Animation
 
 const box = document.querySelector(".feedback");
-const boxOptions = { rootMargin: "-80px" };
+const boxOptions = { rootMargin: "-50px" };
 
 const lastScroll = new IntersectionObserver((entries, lastScroll) => {
   entries.forEach((entry) => {
