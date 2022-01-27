@@ -1,21 +1,3 @@
-gsap.from("header nav ul .left", {
-  opacity: 0,
-  duration: 1,
-  x: 50,
-  delay: 2.55,
-});
-gsap.from("header nav ul .center", {
-  opacity: 0,
-  duration: 1,
-  delay: 2.55,
-});
-gsap.from("header nav ul .right", {
-  opacity: 0,
-  duration: 1,
-  x: -50,
-  delay: 2.55,
-});
-
 gsap.from(".hero .hero-box .content .title", {
   opacity: 0,
   duration: 1,
@@ -32,6 +14,24 @@ gsap.from(".hero .hero-box .content .btn", {
   opacity: 0,
   duration: 1,
   delay: 2,
+});
+
+gsap.from("header nav ul .left", {
+  opacity: 0,
+  duration: 1,
+  x: 50,
+  delay: 2.55,
+});
+gsap.from("header nav ul .center", {
+  opacity: 0,
+  duration: 1,
+  delay: 2.55,
+});
+gsap.from("header nav ul .right", {
+  opacity: 0,
+  duration: 1,
+  x: -50,
+  delay: 2.55,
 });
 
 const sliders = document.querySelectorAll(".slide");
