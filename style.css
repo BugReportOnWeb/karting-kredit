@@ -109,6 +109,34 @@ header nav ul li a:active {
   height: 405px;
 }
 
+/* Slide-in animation styling */
+
+.main-element .card img,
+.main-element .card .content {
+  opacity: 0;
+  transition: all 900ms ease-in-out;
+}
+
+.main-element .section-one .card img,
+.main-element .section-two .card .content,
+.main-element .section-three .card img,
+.main-element .section-four .card .content {
+  transform: translateX(-100%);
+}
+
+.main-element .section-one .card .content,
+.main-element .section-two .card img,
+.main-element .section-three .card .content,
+.main-element .section-four .card img {
+  transform: translateX(100%);
+}
+
+.main-element .show .card img,
+.main-element .show .card .content {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .main-element .card .content {
   margin-left: 4em;
 }
@@ -140,6 +168,12 @@ header nav ul li a:active {
 .main-element .divider svg {
   width: 450px;
   height: 11.25px;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.main-element .show-div svg {
+  opacity: 1;
 }
 
 .main-element .section-two .card .content,
