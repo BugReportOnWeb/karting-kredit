@@ -1,3 +1,5 @@
+// NavBar Animation
+
 gsap.from(".hero .hero-box .content .title", {
   opacity: 0,
   duration: 1,
@@ -15,6 +17,8 @@ gsap.from(".hero .hero-box .content .btn", {
   duration: 1,
   delay: 2,
 });
+
+// Hero Animation
 
 gsap.from("header nav ul .left", {
   opacity: 0,
@@ -34,6 +38,8 @@ gsap.from("header nav ul .right", {
   delay: 2.55,
 });
 
+// Image Side Fade-In Animation
+
 const sliders = document.querySelectorAll(".slide");
 const options = { rootMargin: "-150px" };
 
@@ -52,6 +58,8 @@ sliders.forEach((slide) => {
   observer.observe(slide);
 });
 
+// SVG Divider Fade-In Animation
+
 const dividers = document.querySelectorAll(".divider");
 const divOptions = { rootMargin: "-20px" };
 
@@ -69,3 +77,21 @@ const onScroll = new IntersectionObserver((entries, onScroll) => {
 dividers.forEach((divider) => {
   onScroll.observe(divider);
 });
+
+// Textbox Fade-In Animation
+
+const box = document.querySelector(".feedback");
+const boxOptions = { rootMargin: "-80px" };
+
+const lastScroll = new IntersectionObserver((entries, lastScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      lastScroll.unobserve(entry.target);
+    }
+  });
+}, boxOptions);
+
+lastScroll.observe(box);

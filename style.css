@@ -93,7 +93,7 @@ header nav ul li a:active {
 /* Main element styling */
 
 .main-element {
-  margin: 46em 4em 4em 4em;
+  margin: 46em 4em 5em 4em;
 }
 
 .main-element .card {
@@ -109,7 +109,7 @@ header nav ul li a:active {
   height: 405px;
 }
 
-/* Slide-in animation styling */
+/* Slide-in animation styling START */
 
 .main-element .card img,
 .main-element .card .content {
@@ -121,14 +121,14 @@ header nav ul li a:active {
 .main-element .section-two .card .content,
 .main-element .section-three .card img,
 .main-element .section-four .card .content {
-  transform: translateX(-100%);
+  transform: translateX(-50%);
 }
 
 .main-element .section-one .card .content,
 .main-element .section-two .card img,
 .main-element .section-three .card .content,
 .main-element .section-four .card img {
-  transform: translateX(100%);
+  transform: translateX(50%);
 }
 
 .main-element .show .card img,
@@ -136,6 +136,8 @@ header nav ul li a:active {
   transform: translateX(0);
   opacity: 1;
 }
+
+/* Slide-in animation styling END */
 
 .main-element .card .content {
   margin-left: 4em;
@@ -185,4 +187,41 @@ header nav ul li a:active {
 .main-element .section-two .card img,
 .main-element .section-four .card img {
   order: 2;
+}
+
+/* Textbox area styling */
+
+.feedback {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.feedback .content {
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 650ms ease-in-out;
+}
+
+.feedback .content .text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
+
+.feedback .content .textbox textarea {
+  height: 190px;
+  width: 56%;
+  border-style: none;
+  background: rgba(48, 98, 181, 0.3);
+  box-shadow: 0 15px 25px rgba(48, 98, 181, 0.7);
+  padding: 2em;
+  border-radius: 30px;
+  margin: 1.3em 0 2.5em;
+  outline: rgba(48, 98, 181, 0.5);
+}
+
+.appear .content {
+  opacity: 1;
+  transform: translateY(0);
 }
