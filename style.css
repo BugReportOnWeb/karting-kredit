@@ -91,3 +91,64 @@ header nav ul li a:active {
 }
 
 /* Main element styling */
+
+.main-element {
+  margin: 46em 4em 4em 4em;
+}
+
+.main-element .card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 63%;
+  margin: 0 auto;
+}
+
+.main-element .card img {
+  width: 270px;
+  height: 405px;
+}
+
+.main-element .card .content {
+  margin-left: 4em;
+}
+
+.main-element .card .content .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
+
+.main-element .card .content .description-one,
+.main-element .card .content .description-two {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.main-element .card .content .description-two {
+  margin-top: 2em;
+}
+
+.main-element .divider {
+  width: fit-content;
+  margin: 4.7em auto;
+}
+
+.main-element .divider svg {
+  width: 450px;
+  height: 11.25px;
+}
+
+.main-element .section-two .card .content,
+.main-element .section-four .card .content {
+  order: 1;
+  margin: 0 4em 0 0;
+}
+
+.main-element .section-two .card img,
+.main-element .section-four .card img {
+  order: 2;
+}
