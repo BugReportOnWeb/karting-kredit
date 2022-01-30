@@ -23,6 +23,7 @@ header {
 
 header nav {
   width: 45%;
+  z-index: 1;
 }
 
 header nav ul {
