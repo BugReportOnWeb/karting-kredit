@@ -1,4 +1,4 @@
-// NavBar Animation
+// Hero Animation
 
 gsap.from(".hero .hero-box .content .title", {
   opacity: 0,
@@ -18,7 +18,7 @@ gsap.from(".hero .hero-box .content .btn", {
   delay: 1.9,
 });
 
-// Hero Animation
+// NavBar Animation
 
 gsap.from("header nav ul .left", {
   opacity: 0,
