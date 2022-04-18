@@ -4,5 +4,5 @@ Yeah, I know the name doesn't relate at all with a so-called “NGO” site. It 
 
 *Build this to just test out some basic JS animations*
 
-### Sample screencast
-![Screencast](./assets/screencast/screencast.gif)
+<!-- ### Sample screencast -->
+<!-- ![Screencast](./assets/screencast/screencast.gif) -->
